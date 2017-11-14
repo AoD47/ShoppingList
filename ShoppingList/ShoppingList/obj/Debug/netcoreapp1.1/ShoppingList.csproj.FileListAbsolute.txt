@@ -1,0 +1,9 @@
+C:\Andre\SoppingList\ShoppingList\ShoppingList\bin\Debug\netcoreapp1.1\ShoppingList.deps.json
+C:\Andre\SoppingList\ShoppingList\ShoppingList\bin\Debug\netcoreapp1.1\ShoppingList.runtimeconfig.json
+C:\Andre\SoppingList\ShoppingList\ShoppingList\bin\Debug\netcoreapp1.1\ShoppingList.runtimeconfig.dev.json
+C:\Andre\SoppingList\ShoppingList\ShoppingList\bin\Debug\netcoreapp1.1\ShoppingList.dll
+C:\Andre\SoppingList\ShoppingList\ShoppingList\bin\Debug\netcoreapp1.1\ShoppingList.pdb
+C:\Andre\SoppingList\ShoppingList\ShoppingList\obj\Debug\netcoreapp1.1\ShoppingList.csprojResolveAssemblyReference.cache
+C:\Andre\SoppingList\ShoppingList\ShoppingList\obj\Debug\netcoreapp1.1\ShoppingList.AssemblyInfo.cs
+C:\Andre\SoppingList\ShoppingList\ShoppingList\obj\Debug\netcoreapp1.1\ShoppingList.dll
+C:\Andre\SoppingList\ShoppingList\ShoppingList\obj\Debug\netcoreapp1.1\ShoppingList.pdb
