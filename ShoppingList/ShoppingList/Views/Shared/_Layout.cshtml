@@ -10,42 +10,55 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
+
     <environment names="Staging,Production">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
     @Html.Raw(JavaScriptSnippet.FullScript)
+
 </head>
 <body>
+    @*Nav Bar*@
     <nav class="navbar navbar-inverse navbar-fixed-top">
+        @*Container for the Nav Bar*@
         <div class="container">
+            @*Container for the Top part of the header*@
             <div class="navbar-header">
+                @*Collapse Button if screen is too small*@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @*This is my home Page Link*@
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">ShoppingList</a>
+                @*Home Page Link*@
+                <a asp-area="" asp-controller="Items" asp-action="Index" class="navbar-brand">My List</a>
             </div>
+            @*Container for the links in the nav bar*@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Items" asp-action="Index">Items</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Items" asp-action="Index">Items</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    @*End Of Nav Bar*@
+
+    @*Start of body content*@
     <div class="container body-content">
+        @*View gets inserted here*@
         @RenderBody()
         <hr />
+
+        @*Start of footer*@
         <footer>
-            <p>&copy; 2017 - ShoppingList</p>
+            <p>&copy; 2017 - Andre Kroukamp</p>
         </footer>
     </div>
 
@@ -72,4 +85,5 @@
 
     @RenderSection("Scripts", required: false)
 </body>
+@*End of body content*@
 </html>
