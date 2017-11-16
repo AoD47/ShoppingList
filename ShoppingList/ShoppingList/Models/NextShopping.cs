@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ShoppingList.Models
 {
-    public class Items
+    public class NextShopping
     {
         public int iD { get; set; }
         public string name { get; set; }
